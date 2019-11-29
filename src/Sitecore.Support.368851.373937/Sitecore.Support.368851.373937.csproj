@@ -54,19 +54,19 @@
       <HintPath>..\packages\SC.Sitecore.Kernel.9.0.2\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.XA.Foundation.Abstractions">
+    <Reference Include="Sitecore.XA.Foundation.Abstractions, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Abstractions.1.8.0\lib\Sitecore.XA.Foundation.Abstractions.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.XA.Foundation.Common">
+    <Reference Include="Sitecore.XA.Foundation.Common, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Common.1.8.0\lib\Sitecore.XA.Foundation.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.XA.Foundation.Multisite">
+    <Reference Include="Sitecore.XA.Foundation.Multisite, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Multisite.1.8.0\lib\Sitecore.XA.Foundation.Multisite.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.XA.Foundation.Search">
+    <Reference Include="Sitecore.XA.Foundation.Search, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Search.1.8.0\lib\Sitecore.XA.Foundation.Search.dll</HintPath>
       <Private>False</Private>
     </Reference>

@@ -8,7 +8,7 @@ namespace Sitecore.Support
 {
     public class SearchDatasource : Sitecore.XA.Foundation.Search.Pipelines.ResolveRenderingDatasource.SearchDatasource
     {
-        protected override bool IsDatasourceValid(string datasource) =>
+        protected bool IsDatasourceValid(string datasource) =>
            ((datasource.Length > 1) && (datasource.Contains(":") && (!datasource.StartsWith("local:") && (!datasource.StartsWith("page:") && (!datasource.StartsWith("field:") && !datasource.StartsWith("code:") && !datasource.StartsWith("query:"))))));
 
         public new void Process(ResolveRenderingDatasourceArgs args)
