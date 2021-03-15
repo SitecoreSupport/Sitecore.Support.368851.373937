@@ -1,5 +1,4 @@
 ﻿using Sitecore.DependencyInjection;
-using Sitecore.Pipelines.ResolveRenderingDatasource;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.XA.Foundation.Abstractions;
 using System;
@@ -7,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Sitecore.XA.Foundation.Multisite.Extensions;
+using Sitecore.Pipelines.ParseDataSource;
 
 namespace Sitecore.Support
 {
@@ -15,7 +15,7 @@ namespace Sitecore.Support
         protected bool IsDatasourceValid(string datasource) =>
            ((datasource.Length > 1) && (datasource.Contains(":") && (!datasource.StartsWith("local:") && (!datasource.StartsWith("page:") && (!datasource.StartsWith("field:") && !datasource.StartsWith("code:") && !datasource.StartsWith("query:"))))));
 
-        public void Process(ResolveRenderingDatasourceArgs args)
+        public void Process(ParseDataSourceArgs args)
         {
             if (ServiceProviderServiceExtensions.GetService<IContext>(ServiceLocator.ServiceProvider).Site.IsSxaSite() && !this.IsDatasourceValid(args.Datasource))
             { 
