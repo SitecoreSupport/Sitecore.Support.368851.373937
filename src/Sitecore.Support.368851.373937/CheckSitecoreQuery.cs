@@ -13,7 +13,7 @@ namespace Sitecore.Support
 
         public void Process(ParseDataSourceArgs args)
         {
-            if (ServiceProviderServiceExtensions.GetService<IContext>(ServiceLocator.ServiceProvider).Site.IsSxaSite() && !this.IsDatasourceValid(args.Datasource))
+            if (ServiceProviderServiceExtensions.GetService<IContext>(ServiceLocator.ServiceProvider).Site.IsSxaSite() && !this.IsDatasourceValid(args.DataSource))
             { 
                 args.AbortPipeline();
             }
