@@ -1,6 +1,6 @@
 ﻿using Sitecore.Pipelines.ResolveRenderingDatasource;
 
-namespace Sitecore.Support
+namespace Sitecore.Support.XA.Foundation.Search.Pipelines.ResolveRenderingDatasource
 {
     public class SearchDatasource : Sitecore.XA.Foundation.Search.Pipelines.ResolveRenderingDatasource.SearchDatasource
     {
